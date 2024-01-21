@@ -1,0 +1,95 @@
+.windowNotificaciones{
+  flex-direction: column;
+  height: calc(100vh - 4rem - 1.5rem);
+  gap: .75rem;
+}
+  .windowNotificaciones > h3{
+    text-align: center;
+    background-color: rgb(97, 31, 63);
+    color: #fff;
+    text-transform: uppercase;
+    padding: .75rem .5rem;
+    border-radius: 5px;
+  }
+
+  .windowNotificaciones .articleNotificaciones{
+    height: calc(100% - 3.65rem);
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+    padding-right: .75rem;
+  }
+    .articleNotificaciones ul{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+      .cardNotification{
+        position: relative;
+        width: calc(100% - 2rem);
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        border-radius: 7.5px;
+        padding: 1rem;
+        background-color: rgba(97, 31, 63, 0.1);
+      }
+
+      .cardNotification .imagenNotificacion{
+        background-color: rgb(97, 31, 63);
+        padding: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 50%;
+      }
+        .cardNotification .imagenNotificacion svg{
+          width: 1.1rem;
+          height: 1.1rem;
+        }
+
+      .cardNotification .informacion{
+        max-width: 85%;
+      }
+      .cardNotification .informacion h3{
+        
+      }
+      .cardNotification .informacion p{
+
+      }
+
+      .cardNotification .interactivos{
+        position: relative;
+        width: 20%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        color: #fff;
+        top: .5rem;
+        background-color: rgb(97, 31, 63);
+        border-radius: 7.5px;
+      }
+        .cardNotification .interactivos svg{
+          width: 1.25rem;
+          height: 1.25rem;
+          padding: .5rem;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 100ms ease;
+        }
+        .cardNotification .interactivos svg:hover{
+          background-color: #fff;
+          color: rgb(97, 31, 63);
+        }
+
+  .cardNotification > p{
+    position: absolute;
+    top: .5rem;
+    right: 1.6rem;
+    color: rgb(97, 31, 63);
+  }

@@ -1,0 +1,194 @@
+.headerComplete{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 8rem);
+  height: calc(4rem - 1.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem 4rem;
+  color: #682444;
+  border-bottom: 2px solid rgba(104, 36, 68, .1);
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+  z-index: 20;
+  background-color: #fff;
+}
+
+  .headerComplete .articleLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+  .headerComplete .articleLogo div.containerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    cursor: pointer;
+    transition: 200ms ease;
+  }
+  .headerComplete .articleLogo .containerLogo:hover{
+    text-shadow: 0 0 5px rgba(104, 36, 68, .25);
+    text-decoration: underline;
+  }
+    .headerComplete .articleLogo .containerLogo img{
+      height: 40px;
+      transition: 200ms ease;
+    }
+    .headerComplete .articleLogo .containerLogo p{
+      font-size: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+  .headerComplete .articleLogo .containerLogo:hover img{
+    filter: drop-shadow(0 0 5px rgba(104, 36, 68, .25));
+  }
+
+  .headerComplete .containerInfoSection{
+    position: relative;
+    /* left: -1rem; */
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    justify-content: center;
+  }
+    .headerComplete .containerInfoSection svg{
+      width: 1.1rem;
+      height: 1.1rem;
+      color: rgba(104, 36, 68, .5);
+    }
+    .headerComplete .containerInfoSection h2{
+      text-transform: uppercase;
+      font-size: 16px;
+      color: rgba(104, 36, 68, .75);
+      /* font-weight: normal; */
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .headerComplete .articleUserImage h4{
+      font-size: 12px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+  .headerComplete .articleUserImage{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .headerComplete .articleUserImage .containerUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .65rem;
+    padding: .6rem .85rem;
+    border-radius: 5px 5px 0 0;
+    transition: 200ms ease;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    /* box-shadow: 0 0 2.5px #000; */
+  }
+  .headerComplete .articleUserImage .containerUser:hover{
+    background-color: rgba(104, 36, 68, 0.075);
+    border-bottom: 2px solid #682444;
+  }
+    .headerComplete .mainUserImage{
+      width: 27.5px;
+      height: 27.5px;
+      cursor: pointer;
+    }
+
+    .headerComplete .containerAddGroup{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .75rem .5rem;
+      border-radius: 5px 5px 0 0 ;
+      transition: 200ms ease;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+    .headerComplete .containerAddGroup:hover{
+      background-color: rgba(104, 36, 68, 0.075);
+      border-bottom: 2px solid #682444;
+      }
+
+    .headerComplete .addNewSection{
+      width: 22.5px;
+      height: 22.5px;
+    }
+
+.wCU-I{
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+}
+.wCU-A{
+  visibility: visible;
+  opacity: 1;
+  z-index: 20;
+}
+.containerInforUser{
+  position: absolute;
+  top: 4rem;
+  right: 2.25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid rgba(104, 36, 68, .1);
+  border-top: 2px solid #682444;
+  background-color: #fff;
+  padding: .5rem .75rem;
+  transition: 100ms ease;
+}
+  .containerInforUser{
+    font-size: 19px;
+  }
+  .containerInforUser .nameUser{
+    text-transform: capitalize;
+  }
+  .containerInforUser .listConfigUser{
+    display: flex;
+    gap: .25rem;
+    flex-direction: column;
+    padding-top: .5rem;
+  }
+    .containerInforUser .listConfigUser li{
+      display: flex;
+      gap: .75rem;
+      align-items: center;
+      padding: .45rem 1rem;
+      border-radius: 2.5px;
+      cursor: pointer;
+      transition: 250ms ease;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+    .containerInforUser .listConfigUser li:hover{
+      background-color: rgba(104, 36, 68, 0.05);
+      border-bottom: 2px solid #682444;
+    }
+    .containerInforUser .listConfigUser .image{
+      width: 20px;
+      height: 20px;
+    }
+    .containerInforUser .listConfigUser p{
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+
+.divisiorHeader{
+  margin-top: 4rem;
+}

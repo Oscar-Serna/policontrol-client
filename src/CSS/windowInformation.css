@@ -1,0 +1,54 @@
+.windowInformation{
+  position: relative;
+  width: calc(100% - 14.5rem - .75rem - 1.5rem);
+  max-height: calc(100vh - 4rem - 1.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 3rem;
+  background-color: #fff;
+  margin: .75rem;
+  border-radius: 7.5px 7.5px 0 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.windowInformation > h3{
+  text-align: center;
+  text-transform: uppercase;
+  padding: .75rem;
+  background-color: rgb(97, 31, 63);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.windowInformation::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+  background-color: rgba(104, 36, 68, 0.25);
+}
+.windowInformation::-webkit-scrollbar-thumb{
+  background: #682444;
+  border-radius: 25px;
+}
+.windowInformation::-webkit-scrollbar-thumb:hover{
+  background: rgba(104, 36, 68, 0.5);
+}
+.windowInformation::-webkit-scrollbar-thumb:active{
+  background-color: rgba(104, 36, 68, 0.25);
+}
+
+.windowInformation > article::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+  background-color: rgba(104, 36, 68, 0.25);
+  border-radius: 25px;
+}
+.windowInformation > article::-webkit-scrollbar-thumb{
+  background: #682444;
+  border-radius: 25px;
+}
+.windowInformation > article::-webkit-scrollbar-thumb:hover{
+  background: rgba(104, 36, 68, 0.5);
+}
+.windowInformation > article::-webkit-scrollbar-thumb:active{
+  background-color: rgba(104, 36, 68, 0.25);
+}

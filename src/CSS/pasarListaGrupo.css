@@ -1,0 +1,22 @@
+.windowPasarListaGrupo{
+  height: calc(100vh - 4rem - 1.5rem);
+  gap: .75rem;
+  flex-direction: column;
+}
+
+.windowPasarListaGrupo > article{
+  height: calc(100%  - 3.65rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+  .windowPasarListaGrupo > article > div{
+    color: rgb(97, 31, 63);
+  }
+    .windowPasarListaGrupo > article > div > h3{
+      font-size: 26px;
+    }

@@ -1,0 +1,128 @@
+.cNS-I{
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+.cNS-A{
+  visibility: visible;
+  opacity: 1;
+  z-index: 25;
+}
+
+.cNS-I .articleCreateNewSection{
+  transform: scale(.75);
+}
+.cNS-A .articleCreateNewSection{
+  transform: scale(1);
+}
+
+.createNewSection{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .25);
+  font-family: 'Roboto', sans-serif;
+  transition: 100ms ease;
+}
+  .articleCreateNewSection{
+    position: relative;
+    width: 25rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    color: #682444;
+    transition: 250ms ease;
+    user-select: none;
+  }
+
+  .articleCreateNewSection .image{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    width: 19px;
+    height: 19px;
+    padding: .3rem;
+    padding-top: 0;
+    cursor: pointer;
+  }
+
+  .articleCreateNewSection .formCreateSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+    .formCreateSection .containerInput{
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+      .formCreateSection .containerInput p{
+        position: absolute;
+        left: 1.5rem;
+        color: #682444;
+        opacity: .65;
+        font-size: 14px;
+        transition: 150ms ease;
+        z-index: 2;
+      }
+      .formCreateSection .containerInput input{
+        position: relative;
+        width: calc(100% - 2rem);
+        padding: 1.75rem 1rem .75rem 1rem;
+        border: none;
+        border-bottom: 1px solid #682444;
+        background-color: rgba(0, 0, 0, .035);
+        border-radius: 7.5px 7.5px 0 0;
+        outline: rgba(0, 0, 0, 0);
+        z-index: 5;
+      }
+      .formCreateSection .containerInput input:focus ~ p{
+        margin-top: -1.5rem;
+        left: 1rem;
+        font-size: 12px;
+        opacity: 1;
+      }
+      .formCreateSection .containerInput input:focus ~ p::after{
+        content: ":";
+      }
+      .formCreateSection .containerInput .textSelected{
+        margin-top: -1.5rem;
+        left: 1rem;
+        font-size: 12px;
+        opacity: 1;
+      }
+
+    .formCreateSection .containerButtons{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+      .formCreateSection .containerButtons button{
+        width: 6rem;
+        border-radius: 5px;
+        border: none;
+        padding: .5rem;
+        cursor: pointer;
+        transition: 200ms ease;
+        border: 2px solid rgba(0, 0, 0, 0);
+        background-color: rgba(104, 36, 68, 0.05);
+      }
+      .formCreateSection .containerButtons button:hover{
+        /* background-color: #682444; */
+        background-color: rgba(104, 36, 68, 0.1);
+        /* color: #fff; */
+        border-bottom: 2px solid #682444;
+        /* border-right: 1.5px solid #682444; */
+        /* box-shadow: 0 2px 5px #682444; */
+      }

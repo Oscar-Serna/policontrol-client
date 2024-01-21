@@ -1,0 +1,50 @@
+.windowCalendario{
+  flex-direction: column;
+  height: calc(100vh - 4rem - 1.5rem);
+  gap: .75rem;
+}
+  .windowCalendario > h3{
+    text-align: center;
+    padding: .75rem .5rem;
+    background-color: rgba(97, 31, 63, 1);
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .windowCalendario .articleCalendario {
+    height: calc(100% - 3.65rem);
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    overflow-y: scroll;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .windowCalendario .articleCalendario > h3{
+    color: rgb(97, 31, 63);
+    padding: 1rem 0;
+  }
+
+  .windowCalendario .articleCalendario .contentCalendario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.25rem;
+  }
+
+    .windowCalendario .articleCalendario .contentCalendario div{
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 7.5px;
+      background-color: rgba(97, 31, 63, 0.15);
+      transition: 100ms ease;
+    }
+    .windowCalendario .articleCalendario .contentCalendario div:hover{
+      background-color: rgb(97, 31, 63);
+      color: #fff;
+    }

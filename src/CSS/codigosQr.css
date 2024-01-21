@@ -1,0 +1,77 @@
+.windowCodigosQr{
+  height: calc(100vh - 4rem - 1.5rem);
+  flex-direction: column;
+  gap: .75rem;
+}
+  .windowCodigosQr > h3{
+    text-align: center;
+    background-color: rgb(97, 31, 63);
+    color: #fff;
+    padding: .75rem .5rem;
+    border-radius: 5px;
+  }
+
+  .windowCodigosQr > article{
+    height: calc(100% - 3.65rem);
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    overflow-y: scroll;
+    padding-right: 1rem;
+  }
+    .windowCodigosQr > article > div.notGroups{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      color: rgb(97, 31, 63);
+      text-align: center;
+    }
+
+      .windowCodigosQr > article >div.notGroups h3{
+        font-size: 26px;
+      }
+
+    .windowCodigosQr  .cardGroupQr{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      background-color: rgba(97, 31, 63, .05);
+      border-radius: 7.5px;
+    }
+      .windowCodigosQr .cardGroupQr .info{
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+      }
+        .windowCodigosQr  .cardGroupQr .info h3{
+          font-size: 18px;
+        }
+        .windowCodigosQr  .cardGroupQr .info h4{
+          text-transform: uppercase;
+          font-size: 16px;
+        }
+
+    .windowCodigosQr  .cardGroupQr .button{
+      /* width: 10rem;
+      height: 2.25rem; */
+    }
+      .windowCodigosQr  .cardGroupQr input{
+        width: 10rem;
+        height: 2.25rem;
+        border: none;
+        border-radius: 7.5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: rgb(97, 31, 63);
+        color: #fff;
+        cursor: pointer;
+        transition: 150ms ease;
+      }
+
+      .windowCodigosQr .cardGroupQr input:hover{
+        background-color: #fff;
+        color: rgb(97, 31, 63);
+      }

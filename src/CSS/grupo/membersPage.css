@@ -1,0 +1,245 @@
+
+.articleMembersPage {
+  height: 100%;
+  overflow: hidden;
+}
+
+  .articleMembersPage .seccionMiembros{
+    height: calc(100% - 3rem);
+    overflow-y: scroll;
+  }
+  .seccionMiembros::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: rgba(104, 36, 68, 0.25);
+  }
+  .seccionMiembros::-webkit-scrollbar-thumb{
+    background: #682444;
+    border-radius: 25px;
+  }
+  .seccionMiembros::-webkit-scrollbar-thumb:hover{
+    background: rgba(104, 36, 68, 0.5);
+  }
+  .seccionMiembros::-webkit-scrollbar-thumb:active{
+    background-color: rgba(104, 36, 68, 0.25);
+  }
+
+
+.seccionOpcionesGrupo{
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  padding: 0 1rem;
+  background-color: rgba(97, 31, 63, 0.035);
+}
+  .seccionOpcionesGrupo > div{
+    display: inherit;
+    justify-self: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: 150ms ease;
+  }
+    .seccionOpcionesGrupo > div:hover{
+      background-color: rgba(97, 31, 63, 0.075);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* MODALS */
+.modalInactive{
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  user-select: none;
+}
+.modalActive{
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(1.5px);
+  z-index: 100;
+  user-select: none;
+}
+.modalAgregarIntegrantes{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 350ms ease;
+}
+  .subModalActive{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+  }
+  .subModalInactive{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+  .modalAgregarIntegrantes > article{
+    position: relative;
+    display: inherit;
+    justify-content: inherit;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 7.5px;
+    transition: 350ms ease;
+  }
+    .modalAgregarIntegrantes .header{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: rgb(97, 31, 63);
+      padding-bottom: 1rem;
+    }
+      .modalAgregarIntegrantes .header svg{
+        position: absolute;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        padding: .25rem;
+        border-radius: 5px;
+        transition: 150ms ease;
+      }
+        .modalAgregarIntegrantes .header svg:hover{
+          background-color: rgba(97, 31, 63, .9);
+          color: #fff;
+        }
+
+    .modalAgregarIntegrantes .articleNumberMembers .content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+      flex-direction: column;
+    }
+      .modalAgregarIntegrantes .articleNumberMembers .content input{
+        width: 7.5rem;
+        text-align: center;
+        outline: rgba(0, 0, 0, 0);
+        padding: .5rem 0;
+        border: none;
+        border-bottom: 2px solid rgb(97, 31, 63);
+        border-radius: 5px 5px 0 0;
+        font-size: 15px;
+        transition: 200ms ease;
+        cursor: pointer;
+      }
+        .modalAgregarIntegrantes .articleNumberMembers .content input:focus{
+          width: 12.5rem;
+          background-color: rgba(97, 31, 63, .05);
+          color: rgb(97, 31, 63);
+          cursor: text;
+        }
+
+        .modalAgregarIntegrantes .articleNumberMembers .content input::-webkit-inner-spin-button,
+        .modalAgregarIntegrantes .articleNumberMembers .content input::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+    .modalAgregarIntegrantes .buttons{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 1rem;
+      padding-top: 1.5rem;
+    }
+      .modalAgregarIntegrantes .buttons input{
+        border: none;
+        padding: .5rem 2rem;
+        border-radius: 5px;
+        background-color: rgba(97, 31, 63, .05);
+        color: rgb(97, 31, 63);
+        cursor: pointer;
+        transition: 150ms ease;
+      }
+        .modalAgregarIntegrantes .buttons input:hover{
+          background-color: rgb(97, 31, 63);
+          color: #fff;
+        }
+
+    .modalAgregarIntegrantes .articleInfoMembers{
+      position: absolute;
+    }
+      .modalAgregarIntegrantes .articleInfoMembers .content{
+        max-height: 30rem;
+        overflow-y: scroll;
+        padding: 0 .75rem;
+      }
+      .modalAgregarIntegrantes .articleInfoMembers .content::-webkit-scrollbar{
+        width: 7.5px;
+        background: #fff;
+      }
+      .modalAgregarIntegrantes .articleInfoMembers .content::-webkit-scrollbar-thumb{
+        background-color: #682444;
+        border-radius: 25px;
+      }
+      .modalAgregarIntegrantes .articleInfoMembers .content::-webkit-scrollbar-thumb:hover{
+        background: rgba(104, 36, 68, 0.75);
+      }
+      .modalAgregarIntegrantes .articleInfoMembers .content::-webkit-scrollbar-thumb:active{
+        background-color: rgba(104, 36, 68, 0.5);
+      }
+        .modalAgregarIntegrantes .articleInfoMembers .content ul{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 1rem;
+        }
+          .modalAgregarIntegrantes .articleInfoMembers .content li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .75rem;
+            color: #682444;
+          }
+            .modalAgregarIntegrantes .articleInfoMembers .content div{
+              display: flex;
+              align-items: center;
+              gap: .75rem;
+            }
+              .modalAgregarIntegrantes .articleInfoMembers .content input{
+                border: none;
+                border-bottom: 1px solid #682444;
+                outline: rgba(0, 0, 0, 0);
+                /* font-weight: bold; */
+                padding: .25rem;
+                transition: 50ms ease;
+              }
+              .modalAgregarIntegrantes .articleInfoMembers .content input:focus{
+                transform: scale(1.025);
+                color: #682444;
+              }
+                .modalAgregarIntegrantes .articleInfoMembers .content input:focus::placeholder{
+                  color: rgba(0, 0, 0, 0);
+                }
+              .modalAgregarIntegrantes .articleInfoMembers .content input:hover::placeholder{
+                color: #682444;
+              }
+              .modalAgregarIntegrantes .articleInfoMembers .content input::placeholder{
+                color: #682444;
+                opacity: .5;
+                transition: 100ms ease;
+              }

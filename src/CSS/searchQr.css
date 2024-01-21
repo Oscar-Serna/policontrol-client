@@ -1,0 +1,129 @@
+.windowSearchQr{
+  height: calc(100vh - 4rem - 1.5rem);
+  flex-direction: column;
+  gap: .75rem;
+}
+
+  .windowSearchQr > article{
+    height: calc(100% - 3.65rem);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: .75rem;
+    overflow-y: scroll;
+    padding-right: 1rem;
+  }
+
+    .windowSearchQr .containerSearch {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+      .windowSearchQr .containerSearch svg{
+        position: absolute;
+        width: 1.25rem;
+        height: 1.25rem;
+        left: .75rem;
+        color: rgb(97, 31, 63);
+      }
+
+      .windowSearchQr .containerSearch > .inputBuscador{
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(97, 31, 63, .05);
+        /* background-color: rgb(97, 31, 63); */
+        outline: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        font-size: 22px;
+        color: rgb(97, 31, 63);
+        padding: 1.25rem 1rem 1.25rem 2.65rem;
+      }
+      .windowSearchQr .containerSearch > .inputBuscador::placeholder{
+        color: rgba(97, 31, 63, .6);
+        /* font-weight: bold; */
+      }
+      .windowSearchQr .containerSearch > .inputBuscador:hover{
+
+      }
+      .windowSearchQr .containerSearch > .inputBuscador:focus{
+        cursor: text;
+      }
+
+      .windowSearchQr .containerSearch > .buttonBuscar{
+        position: absolute;
+        right: 1rem;
+        border: none;
+        padding: .5rem 2rem;
+        border-radius: 5px;
+        color: #fff;
+        background-color: rgb(97, 31, 63);
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: .25px;
+        font-size: 17px;
+        transition: 100ms ease;
+      }
+      .windowSearchQr .containerSearch > .buttonBuscar:hover{
+        background-color: rgba(97, 31, 63, .1);
+        color: rgb(97, 31, 63);
+      }
+
+    .windowSearchQr > article > div.containerClassmateSearched{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+      .windowSearchQr > article .membersNotFound{
+        position: absolute;
+        top: 50%;
+        color: rgb(97, 31, 63);
+      }
+        .windowSearchQr > article .membersNotFound h3{
+          text-transform: uppercase;
+          font-size: 26px;
+        }
+        .windowSearchQr > article .membersNotFound p{
+          font-size: 18px;
+        }
+
+    .windowSearchQr > article .containerClassmateSearched{
+      padding-top: 2rem;
+    }
+
+      .windowSearchQr > article div.cardMemberSearched{
+        width: 16rem;
+        background-color: rgba(97, 31, 63, .075);
+        padding: 1.5rem 1rem 0 1rem;
+        border-radius: 7.5px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .windowSearchQr > article div.cardMemberSearched:hover input{
+        background-color: rgba(97, 31, 63, .1);
+        color: rgb(97, 31, 63);
+        text-decoration: underline;
+      }
+        .windowSearchQr > article div.cardMemberSearched p{
+          color: rgb(97, 31, 63);
+          text-align: center;
+          font-size: 18px;
+          margin: .5rem 0;
+        }
+        .windowSearchQr > article div.cardMemberSearched input{
+          width: calc(100% + 2rem);
+          margin-left: -1rem;
+          padding: .35rem 0;
+          background-color: rgb(97, 31, 63);
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 1px;
+          border: none;
+          transition: 100ms ease;
+          cursor: pointer;
+        }

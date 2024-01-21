@@ -1,0 +1,158 @@
+.groupCard{
+  position: relative;
+  width: 22.5rem;
+  height: 12rem;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  border-bottom-right-radius: 35px;
+  border: 1px solid rgba(104, 36, 68, .15);
+  overflow: hidden;
+  user-select: none;
+  transition: 200ms ease;
+}
+.groupCard:hover{
+  transform: translateY(2.5px) scale(1.005);
+  cursor: grab;
+}
+  .groupCard .topCard{
+    position: relative;
+    background-color: rgba(104, 36, 68, .1);
+    color: #682444;
+    padding: 1rem 1rem;
+    border-radius: 0 0 25px 0;
+    transition: 150ms ease;
+  }
+  .topCard:hover{
+    background-color: #682444;
+    color: #fff;
+  }
+
+    .groupCard .topCard div h3{
+      width: 16rem;
+      font-size: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+
+      text-wrap: nowrap;
+    }
+    .groupCard .topCard a{
+      display: flex;
+      flex-direction: column;
+      gap: .25rem;
+    }
+    .groupCard .topCard a:hover{
+      text-decoration: 1.5px underline rgba(255, 255, 255, .5);
+      text-shadow: 0 0 2.5px rgba(255, 255, 255, 0.6);
+    }
+    .groupCard .topCard h4{
+      font-size: 13px;
+    }
+    .groupCard .topCard .image{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: .5rem;
+      top: .5rem;
+      padding: .35rem;
+      /* padding-top: 0; */
+      cursor: pointer;
+      border-radius: 5px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+      transition: 100ms ease;
+      z-index: 0;
+    }
+    .groupCard .topCard .image:hover{
+      background-color: #fff;
+      box-shadow: 0 1.5px 3px rgba(255, 255, 255, .5);
+      color: #682444;
+    }
+    .groupCard .topCard .image:active{
+      transform: scale(.9);
+      background-color: rgba(255, 255, 255, .65);
+    }
+
+  .bottomCard{
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+  }
+    .bottomCard .infoExtraCard{
+      width: calc(60% - 2rem);
+      padding: .5rem 1rem;
+    }
+      .bottomCard .infoExtraCard p{
+
+      }
+
+    .bottomCard .numberPersonsGroup{
+      width: calc(40% - 2rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: .25rem;
+      /* background-color: rgba(104, 36, 68, .1); */
+      color: #682444;
+      padding: .5rem 1rem;
+      border-radius: 0 0 25px 0;
+      border-top: 1px solid #fff;
+    }
+      .bottomCard .numberPersonsGroup .numberPersons{
+        font-size: 3rem;
+      }
+      .bottomCard .numberPersonsGroup p:not(.numberPersons){
+        
+      }
+
+  .gC-I{
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transform: scale(0);
+    margin-right: -5rem;
+    margin-top: -1rem;
+  }
+  .gC-A{
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1);
+  }
+  .containerDeleteGroup{
+    position: absolute;
+    top: 2.75rem;
+    right: .5rem;
+    background-color: #fff;
+    border: 1px solid rgba(104, 36, 68, 0.5);
+    padding: .25rem;
+    border-radius: 7.5px;
+    transition: 150ms ease;
+  }
+    .containerDeleteGroup .listFunctionsDeleteGroup{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+      .containerDeleteGroup li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        padding: .45rem .9rem;
+        border-radius: 5px;
+        color: #682444;
+        transition: 150ms ease;
+        cursor: pointer;
+      }
+      .containerDeleteGroup li:hover{
+        background-color: #682444;
+        color: #fff;
+      }
+      .containerDeleteGroup img{
+
+      }
+      .containerDeleteGroup p{
+
+      }

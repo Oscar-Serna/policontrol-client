@@ -1,0 +1,132 @@
+.userAside{
+  position: fixed;
+  width: calc(15rem - .75rem);
+  height: calc(100vh - 4rem - 4rem);
+  padding: 2rem .75rem 2rem 0;
+  font-family: 'Roboto', sans-serif;
+  left: 0;
+  border-right: 2px solid rgba(104, 36, 68, 0.1);
+  user-select: none;
+  overflow-y: scroll;
+}
+.userAside::-webkit-scrollbar{
+  width: 5px;
+  background-color: rgba(104, 36, 68, 0.25);
+}
+.userAside::-webkit-scrollbar-thumb{
+  background: #682444;
+  border-radius: 25px;
+}
+.userAside::-webkit-scrollbar-thumb:hover{
+  background: rgba(104, 36, 68, 0.5);
+}
+.userAside::-webkit-scrollbar-thumb:active{
+  background-color: rgba(104, 36, 68, 0.25);
+}
+
+.listUserAside{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #682444;
+  padding-bottom: 1.5rem;
+}
+  .listUserAside > h3{
+    padding-left: 2rem;
+    font-size: 17px;
+  }
+  .listUserAside > a {
+    width: 100%;
+  }
+  .listUserAside .itemMainFunction{
+    position: relative;
+    width: calc(100% - 2.5rem);
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .75rem .5rem .75rem 2rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 200ms ease;
+  }
+
+  .listUserAside .itemGroupsAside{
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .lGA-I{
+    display: none;
+  }
+  .lGA-A{
+    display: flex;
+    flex-direction: column;
+  }
+  .listUserAside .listGroupsCardAside{
+    width: 100%;
+    align-items: flex-end;
+    gap: .75rem;
+    overflow: hidden;
+  }
+
+    .listUserAside .listGroupsCardAside li{
+      width: 9rem;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px;
+      padding: .5rem .75rem;
+      cursor: pointer;
+      border: 1.75px solid rgba(104, 36, 68, 0.05);
+      border-bottom: 1.75px solid rgba(104, 36, 68, 1);
+      background-color: #fff;
+      transition: 150ms ease;
+      text-transform: uppercase;
+      padding-right: .5rem;
+    }
+    .listUserAside .listGroupsCardAside li:hover{
+      border: 1.75px solid rgba(104, 36, 68, 0.5);
+      border-bottom: 1.75px solid #682444;
+      transform: scale(0.98);
+    }
+      .listUserAside .listGroupsCardAside li h4 {
+        width: 7.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+    
+    .itemMainFunction:hover{
+      background-color: rgba(104, 36, 68, 0.06);
+      border: 2px solid rgba(104, 36, 68, 0.5);
+      border-left: 2px solid rgba(0, 0, 0, 0);
+      transition: 100ms ease;
+    }
+    .listUserAside .itemMainFunction .image{
+      width: 20px;
+      height: 20px;
+    }
+    .listUserAside .itemMainFunction > div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: .75rem;
+    }
+      .textoNumeroGrupos{
+        position: absolute;
+        right: 1rem;
+        padding: .25rem .5rem;
+        font-size: 12px;
+        color: #fff;
+        border-radius: 50%;
+        background-color: #682444;
+      }
+      .iAInone{
+        display: none;
+      }
+      .imgArrowItem{
+        width: 10px;
+        position: absolute;
+        left: .75rem;
+      }

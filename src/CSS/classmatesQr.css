@@ -1,0 +1,97 @@
+.windowClassmates{
+  flex-direction: column;
+  height: calc(100vh - 4rem - 1.5rem);
+  gap: .75rem;
+}
+  .windowClassmates > article{
+    height: calc(100% - 3.65rem);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 2rem; */
+    overflow-y: scroll;
+    padding-right: 1rem;
+  }
+    .windowClassmates > article .containerReader{
+      width: 30rem;
+    }
+
+      .windowClassmates > article .containerReader input{
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(97, 31, 63);
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        padding: .75rem 0;
+        margin-top: .5rem;
+        transition: 125ms ease;
+      }
+      .windowClassmates > article .containerReader input:hover{
+        background-color: rgba(97, 31, 63, .15);
+        color: rgb(97, 31, 63);
+      }
+
+    .windowClassmates > article .containerInfoMember{
+      width: 22.5rem;
+      height: 90%;
+      background-color: rgba(97, 31, 63, .065);
+      border-radius: 7.5px;
+    }
+
+
+    .notFoundClassmateQr, .cardQrClassmateInfo{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0 1rem;
+      text-align: center;
+      color: rgb(97, 31, 63);
+    }
+      .notFoundClassmateQr > svg{
+        width: 10rem;
+        height: 10rem;
+      }
+      .notFoundClassmateQr > h3{
+        text-transform: uppercase;
+      }
+
+    .cardQrClassmateInfo {
+      height: calc(100% - 2rem);
+      gap: 0;
+      padding: 1rem;
+    }
+
+      .cardQrClassmateInfo > svg{
+        width: 7.5rem;
+        height: 7.5rem;
+        padding-bottom: 1rem;
+      }
+
+      .cardQrClassmateInfo .turno{
+        font-size: 32px;
+        font-weight: bold;
+        padding-bottom: 1rem;
+      }
+      .cardQrClassmateInfo .nombre{
+        font-size: 20px;
+        padding-bottom: .5rem;
+      }
+      .cardQrClassmateInfo .grupo{
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 1rem;
+      }
+      .cardQrClassmateInfo .carrera{
+        font-weight: bold;
+        font-size: 26px;
+        padding-bottom: 1rem;
+      }
+      .cardQrClassmateInfo .situacion{
+        font-size: 18px;
+      }

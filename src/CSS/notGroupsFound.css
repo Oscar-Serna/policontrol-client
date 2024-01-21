@@ -1,0 +1,45 @@
+.containerNotGroupsFound{
+  position: relative;
+  left: 50%;
+  width: calc(100% - 14.5rem - .75rem - 1.5rem);
+  height: calc(100vh - 4rem - 1.5rem - .5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  text-align: center;
+  color: #682444;
+  transform: translateX(-50%);
+}
+  .containerNotGroupsFound > h3{
+    color: #682444;
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+  .containerNotGroupsFound > p{
+    color: #682444;
+    text-transform: uppercase;
+  }
+
+
+  .imageArrowNotGroupsFound{
+    position: absolute;
+    right: 12.65rem;
+    width: 2rem;
+    height: 2rem;
+    color: #682444;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 700ms;
+  }
+
+  @keyframes arrow {
+    0% {
+      transform: translateY(-.25rem);
+    }
+    100%{
+      transform: translateY(.1rem);
+    }
+  }

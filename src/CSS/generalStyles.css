@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Spline+Sans+Mono:ital@1&display=swap');
+
+.fonts{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Spline Sans Mono', monospace;
+}
+
+body{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,ul,li,nav{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: unset;
+  list-style: none;
+}
+
+.sectionMainInfoUser{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
