@@ -9,9 +9,11 @@ import {
 } from "react-icons/ai";
 import { UserLoginContext } from "../../context/createUserContext";
 import { useContext } from "react";
+import { Navigate } from "react-router-dom";
 
 export const CreateUserForm = () => {
   const { animationFunction } = useContext(UserLoginContext);
+  const { navigateTo, setNavigateTo } = useState(null);
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -51,7 +53,7 @@ export const CreateUserForm = () => {
       animationFunction("close");
       AnimationButtonsTypeUser();
       localStorage.setItem("tku", JSON.stringify(tokenUser));
-      window.location.href = `/u/`;
+      setNavigateTo(<Navigate to={"/u/"}/>);
       return;
     }
 
@@ -226,6 +228,7 @@ export const CreateUserForm = () => {
           ></button>
         </form>
       </article>
+      {navigateTo}
     </section>
   );
 };
